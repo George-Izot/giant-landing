@@ -1,0 +1,19 @@
+mixin customers-item(customers={})
+    -
+        let{
+            src,
+            text,
+            name,
+            company
+        } = customers
+    
+     
+    .customers__card
+        .customers__text=text
+        .customers__info-container
+            .customers__img-container
+                img(src=src, alt="").customers__img
+            .customers__info
+                span.customers__name=name
+                span.customers__company=company
+                    

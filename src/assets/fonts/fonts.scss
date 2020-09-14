@@ -1,11 +1,60 @@
-//@font-face {
-//    font-family: 'Open Sans Bold';
-//    font-display: swap;
-//    src: url('../../assets/fonts/opensans-bold.eot');
-//    src: url('../../assets/fonts/opensans-bold.eot?#iefix') format('embedded-opentype'),
-//        url('../../assets/fonts/opensans-bold.woff') format('woff'),
-//        url('../../assets/fonts/opensans-bold.ttf') format('truetype'),
-//        url('../../assets/fonts/opensans-bold.svg#open_sansbold') format('svg');
-//    font-weight: bold;
-//    font-style: normal;
-//}
+@font-face {
+   font-family: 'Dosis-Bold';
+   font-display: swap;
+   src: url('../assets/fonts/Dosis-Bold.eot');
+   src: url('../assets/fonts/Dosis-Bold.eot?#iefix') format('embedded-opentype'),
+       url('../assets/fonts/Dosis-Bold.woff') format('woff'),
+       url('../assets/fonts/Dosis-Bold.ttf') format('truetype'),
+       url('../assets/fonts/Dosis-Bold.svg#open_sansbold') format('svg');
+   font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto-Regular';
+    font-display: swap;
+    src: url('../assets/fonts/Roboto-Regular.eot');
+    src: url('../assets/fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/Roboto-Regular.woff') format('woff'),
+        url('../assets/fonts/Roboto-Regular.ttf') format('truetype'),
+        url('../assets/fonts/Roboto-Regular.svg#open_sansbold') format('svg');
+        font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto-Light';
+    font-display: swap;
+    src: url('../assets/fonts/Roboto-Light.eot');
+    src: url('../assets/fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/Roboto-Light.woff') format('woff'),
+        url('../assets/fonts/Roboto-Light.ttf') format('truetype'),
+        url('../assets/fonts/Roboto-Light.svg#open_sansbold') format('svg');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto-Medium';
+    font-display: swap;
+    src: url('../assets/fonts/Roboto-Medium.eot');
+    src: url('../assets/fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/Roboto-Medium.woff') format('woff'),
+        url('../assets/fonts/Roboto-Medium.ttf') format('truetype'),
+        url('../assets/fonts/Roboto-Medium.svg#open_sansbold') format('svg');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Dosis-SemiBold';
+    font-display: swap;
+    src: url('../assets/fonts/Dosis-SemiBold.eot');
+    src: url('../assets/fonts/Dosis-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/Dosis-SemiBold.woff') format('woff'),
+        url('../assets/fonts/Dosis-SemiBold.ttf') format('truetype'),
+        url('../assets/fonts/Dosis-SemiBold.svg#open_sansbold') format('svg');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Dosis-Medium';
+    font-display: swap;
+    src: url('../assets/fonts/Dosis-Medium.eot');
+    src: url('../assets/fonts/Dosis-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/Dosis-Medium.woff') format('woff'),
+        url('../assets/fonts/Dosis-Medium.ttf') format('truetype'),
+        url('../assets/fonts/Dosis-Medium.svg#open_sansbold') format('svg');
+    font-style: normal;
+}

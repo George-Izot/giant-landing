@@ -1,3 +1,9 @@
+include ../components/button/button.pug
+include ../components/list-item/list-item.pug
+include ../components/features-item/features-item.pug
+include ../components/pricing-card/pricing-card.pug
+include ../components/customers-item/custimers-item.pug
+
 <!DOCTYPE html>
 html(lang="en")
     head
@@ -6,9 +12,192 @@ html(lang="en")
         title Document
     body
         section.header
-            .container 
-                .row
-                    .col-7 rfw
-                    .col-5 wdw
-
-    //- img(src='./assets/img/2.jpg')
+            .container.header-container     
+                nav.row
+                    .d-flex.col-lg-7.col-md-12.col-sm-12.justify-content-between.align-items-center
+                        a(href='https://krayt.ru/').header__logo-container
+                            img(src='./assets/img/Logo.png' class='header__logo')
+                            span.header__logo-text Giant 
+                        i.fas.fa-bars.menu-bar      
+                    .col-lg-5.header__nav
+                        a(href='https://krayt.ru/').header__link Home
+                        a(href='https://krayt.ru/').header__link Future
+                        a(href='https://krayt.ru/').header__link Pricing
+                        form(action="https://krayt.ru/" target="_blank")
+                            +button('Download Now')
+                    .header.header__burger.col-12
+                        a(href='https://krayt.ru/').header__link Home
+                        a(href='https://krayt.ru/').header__link Future
+                        a(href='https://krayt.ru/').header__link Pricing
+                        form(action="https://krayt.ru/" target="_blank")
+                            +button('Download Now')            
+                img(src='./assets/img/iPhones.png' class='header__background-image')                
+                main.header__main.row.col-lg-6.col-md-12.flex-column
+                    h1.header__title A Powerful & Unique App Landing Template
+                    .header__main-content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    .main__item-container
+                        +list-item({listText:'Unlimited colors: banner with images, slider or video',
+                                    listClass:'wight',
+                                    listTextClass:'wight'})
+                    .main__item-container                    
+                        +list-item({listText:'Fully Responsive and powered by HTML5 and CSS3',
+                                    listClass:'wight',
+                                    listTextClass:'wight'})                
+                    +list-item({listText:'Very easy to customize : set up in minutes',
+                                    listClass:'wight',
+                                    listTextClass:'wight'}) 
+                    .header__main-button
+                        +button('Start Exploring Us')
+        section.features
+            .container
+                .row    
+                    +features-item({iconClass:'fa-tags', title:'Sell any product online',text:'Over 92% of computers are infected with Adware and spyware.Such software is'})
+                    +features-item({iconClass:'fa-cog', title:'Very easy to customize',text:'Many of us are so used to working on a computer desktop that when it comes'})
+                    +features-item({iconClass:'fa-paint-brush', title:'Unlimited colors',text:'Audio player software is used to play back sound recordings in one of the'})
+                    +features-item({iconClass:'fa-fire-extinguisher', title:'Responsive, HTML5, CSS3',text:'Computers have become ubiquitous in almost every facet of our lives. At work,'})
+                    +features-item({iconClass:'fa-file-alt', title:'Designed to convert',text:'If you are looking for a new way to promote your business that won’t cost'})
+                    +features-item({iconClass:'fa-life-ring', title:'With no boundaries',text:'Now, if you are interested in being the best player, getting really good money'})
+        section.dont-leave
+            .container.dont-leave__container
+                .row.d-flex.flex-sm-wrap   
+                    img(src="./assets/img/Device.png", alt="").dont-leave__img.col-lg-6.col-md-12.col-sm-12  
+                    .dont-leave__content.col-lg-6.col-md-12.col-sm-12 
+                        h2 We don’t leave you stranded
+                        p.dont-leave__title-description Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?
+                        p.dont-leave__main-text Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill? If you’re already a developer, or a PM, or a UX designer.
+                        .dont-leave__list
+                            .main__item-container
+                                +list-item({listText:'Unlimited colors: banner with images, slider or video',
+                                        listClass:'black',
+                                        listTextClass:'black'})
+                            .main__item-container            
+                                +list-item({listText:'Fully Responsive and powered by HTML5 and CSS3',
+                                        listClass:'black',
+                                        listTextClass:'black'})
+                            +list-item({listText:'Very easy to customize : set up in minutes',
+                                        listClass:'black',
+                                        listTextClass:'black'})                            
+        section.screenshots
+            .container
+                .row.d-flex.justify-content-center.block-decription
+                    h2.col-12.block-decription__title We don’t leave you stranded
+                    p.block-decription__description.col-lg-8.col-md-12.col-sm-12  Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?
+                .well
+                    #carousel
+                            <img src="./assets/img/slider/1.png" alt="1" />
+                            <img src="./assets/img/slider/2.png" alt="2" />
+                            <img src="./assets/img/slider/3.png" alt="3" />
+                            <img src="./assets/img/slider/4.png" alt="4" />
+                            <img src="./assets/img/slider/5.png" alt="5" />
+                            <img src="./assets/img/slider/6.png" alt="6" />
+                            <img src="./assets/img/slider/7.png" alt="7" />
+                            <img src="./assets/img/slider/6.png" alt="6" />
+                            <img src="./assets/img/slider/6.png" alt="7" />
+                    button#next
+                        <i class="fas fa-arrow-right"></i>
+                    button#prev
+                        <i class="fas fa-arrow-left"></i>       
+        section.pricing
+            .container
+                .row.d-flex.justify-content-center.block-decription
+                    h2.col-12.block-decription__title We don’t leave you stranded
+                    p.block-decription__description.col-lg-8.col-md-12.col-sm-12 Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX   designer, why develop this totally separate skill?
+                    .pricing__cards.col-12
+                        .row
+                            +pricing-card                   
+                            +pricing-card({category:'Standard',
+                                            price:'24.0',
+                                            users:'Five User',
+                                            access:'Multiple Access',
+                                            smsSupport:'SMS Support',
+                                            onlineSupport:'24/7 Online Support',
+                                            freeTrial:'Start Free Trial',
+                                            })                   
+                            +pricing-card({category:'Premium',
+                                            price:'250.0',
+                                            users:'Twenty User',
+                                            access:'Multiple Access',
+                                            smsSupport:'SMS Support',
+                                            onlineSupport:'24/7 Online Support',
+                                            freeTrial:'Start Free Trial',
+                                            })                    
+                            +pricing-card({category:'Enterprise',
+                                            price:'999.0',
+                                            users:'Unlimited User',
+                                            access:'Multiple Access',
+                                            smsSupport:'SMS Support',
+                                            onlineSupport:'24/7 Online Support',
+                                            freeTrial:'Start Free Trial',
+                                            })                    
+        section.video
+            button.video__button( href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" data-lity)
+                .fas.fa-play
+            .video__overlay
+            <div id="inline" style="background:#fff" class="lity-hide">Inline content</div> 
+        section.customers
+           .container
+                .row.d-flex.justify-content-center.block-decription
+                   h2.col-12.block-decription__title We don’t leave you stranded
+                   p.block-decription__description.col-lg-8.col-md-12.col-sm-12 Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX   designer, why develop this totally separate skill?
+                .persons-slider
+                    +customers-item({src:"./assets/img/customers/Bitmap.png",
+                                    text:"The JustLanded for WordPress theme is great, super easy to use and to customize and the support is just awesome: super fast and reliable.",
+                                    name:"Alexandra Bullock",
+                                    company:"Apple Inc."})
+                    +customers-item({src:"./assets/img/customers/man.png",
+                                    text:"Very happy with the theme and incredibly easy to configure, well done! I cannot emphasize how awesome this theme and developer support are.",
+                                    name:"Gary Sebastian",
+                                    company:"Apple Inc."})
+                    +customers-item({src:"./assets/img/customers/girl.png",
+                                    text:"Definitely a great theme and the support team are fantastic. Customer support is numero uno and ShapingRain have got this spot on. Cheers guys.",
+                                    name:"Gary Sebastian",
+                                    company:"Apple Inc."})
+                    +customers-item({src:"./assets/img/customers/Bitmap.png",
+                                    text:"The JustLanded for WordPress theme is great, super easy to use and to customize and the support is just awesome: super fast and reliable.",
+                                    name:"Alexandra Bullock",
+                                    company:"Apple Inc."})  
+                    +customers-item({src:"./assets/img/customers/Bitmap.png",
+                                    text:"The JustLanded for WordPress theme is great, super easy to use and to customize and the support is just awesome: super fast and reliable.",
+                                    name:"Alexandra Bullock",
+                                    company:"Apple Inc."})
+        section.download
+           .container
+                .row.d-flex.justify-content-center.block-decription
+                   h2.col-12.block-decription__title Download Giant App Now
+                .row.download__container
+                    .col-lg-4.col-md-12
+                        a(href="#~")
+                            .download-item
+                                span.fab.fa-apple.download-item__icon
+                                .download-item__descripton-container
+                                    .download-item__title Download
+                                    .download-item__descripton  Download from play store
+                    .col-lg-4.col-md-12
+                        a(href="#~")
+                            .download-item
+                                span.material-icons.download-item__icon android
+                                .download-item__descripton-container
+                                    .download-item__title Download
+                                    .download-item__descripton  Download from play store
+                    .col-lg-4.col-md-12
+                        a(href="#~")
+                            .download-item
+                                span.fab.fa-windows.download-item__icon
+                                .download-item__descripton-container
+                                    .download-item__title Download
+                                    .download-item__descripton  Download from play store
+        footer
+            .container
+                .row.d-flex.justify-content-center
+                    .col-lg-2.col-md-6.col-sm-12.d-flex.justify-content-around.footer__icon-container
+                        a(href="#~")
+                            <i class="footer__icon fab fa-facebook-f"></i>
+                        a(href="#~")
+                            <i class="footer__icon fab fa-twitter"></i>
+                        a(href="#~")
+                            <i class="footer__icon fab fa-dribbble"></i>
+                        a(href="#~")
+                            <i class="footer__icon fab fa-behance"></i>
+                .row.d-flex.justify-content-center
+                    .col-lg-8.col-md-6.col-sm-12.d-flex.justify-content-center
+                        p.footer__text Copyright © 2017 | UXSEVEN - a sister concern of codepixar.com                                                                      

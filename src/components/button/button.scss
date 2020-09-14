@@ -1,0 +1,19 @@
+.button {
+    border: none;
+    font-family: 'Roboto-Medium';
+    border-radius: 17px;
+    background-color: #fff;
+    padding-left: 30px;
+    padding-right: 30px;
+    min-height: 35px;
+    height: max-content;
+    width: max-content;
+    font-size: 0.875rem;
+    transition: 1s;
+    &:hover {       
+        box-shadow: 0px 0px 20px 0px #fff;
+        background-color: #333333;
+        color: #fff;
+        
+    }
+}

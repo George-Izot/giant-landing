@@ -1,0 +1,7 @@
+mixin list-item(listItem={})
+    //- listClass,listTextClass can be "wight" or "black"
+    -let {listText,listClass='black',listTextClass='black'}=listItem
+    .list__container
+        i(class=listClass).list__icon.fas.fa-check-circle
+        p(class=listTextClass).list__text=listText
+          

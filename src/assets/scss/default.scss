@@ -45,7 +45,8 @@ body {
 
 /* Remove list styles on ul, ol elements with a class attribute */
 ul[class],
-ol[class] {
+ol[class],
+li[class] {
     list-style: none;
 }
 
@@ -56,7 +57,7 @@ a:not([class]) {
 
 /* Make images easier to work with */
 img {
-    max-width: 100%;
+    // max-width: 100%;
     display: block;
 }
 
@@ -72,4 +73,17 @@ textarea,
 select {
     font: inherit;
     outline: none;
+}
+button{
+    outline: none !important;
+}
+a{
+    text-decoration: none !important;
+    color:#ffffff;
+}
+a:hover {
+    text-decoration: none !important;
+    cursor: pointer;
+    color:#ffffff;
+    font-weight: bold;
 }

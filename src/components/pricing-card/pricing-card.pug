@@ -1,0 +1,31 @@
+mixin pricing-card(pricingCard={})
+    -
+        let {category='Basic',
+            price='12.0',
+            users='One User',
+            access='Multiple Access',
+            smsSupport='SMS Support',
+            onlineSupport='24/7 Online Support',
+            freeTrial='Start Free Trial',
+            button='Buy Now'    
+            
+            }=pricingCard
+    .col-lg-3.col-md-6
+        .pricing-card
+            .pricing-card__category=category
+            .pricing-card__content-hover
+                .pricing-card__price
+                    span.price__dollar $
+                    span.price__num=price
+                    span.price__per /m
+            .pricing-card__options    
+                .pricing-card__option.pricing-card__users=users
+                .pricing-card__option.pricing-card__access=access
+                .pricing-card__option.pricing-card__sms-support=smsSupport
+                .pricing-card__option.pricing-card__online-support=onlineSupport
+            .pricing-card__free-trial=freeTrial
+            .pricing-card__button
+                span=button
+
+
+            

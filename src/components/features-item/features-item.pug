@@ -1,0 +1,8 @@
+mixin features-item(feature={})
+    -let {iconClass, title,text}=feature
+    .col-lg-4.col-md-6.col-sm-124.features__container
+        .features__icon    
+            i(class= iconClass).fas
+        .features__info        
+            h3.features__title=title
+            p.features__text=text

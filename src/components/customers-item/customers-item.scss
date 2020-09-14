@@ -1,0 +1,72 @@
+.customers{
+    &__card{
+    display: flex;
+    flex-direction: column;
+    max-width: 360px;
+    min-width: 100px;
+    width: 100%;
+    max-height: 273px;
+    min-height: 100px;
+    height: 100%;
+    background-color: #f7fafc;
+    padding: 40px 39px 40px 39px;
+    @media (min-width: 700px) {
+         max-width: 100%;
+         width: 100%;
+    }
+    }
+    &__text{
+    color: #777777;
+    font-size: 14px;
+    margin-bottom: 29px;
+    }
+    &__info-container{
+        display: flex;
+        flex-direction: row;
+        height: min-content;
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        justify-content: center;
+    }
+    &__name{
+        margin-bottom: 5px;
+        font-size: 18px;
+        font-family: 'Dosis-SemiBold';
+    }
+    &__img-container{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+  
+    }
+
+}
+img.customers__img{
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.slick-list.draggable{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.active{
+    .customers__card {
+    background-color: #ffffff;
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+
+    }
+}
+.slick-slide{
+    margin: 0px 15px;
+}
